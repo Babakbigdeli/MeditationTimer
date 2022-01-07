@@ -5,15 +5,82 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Meditation Timer</title>
-        <meta name="description" content="dfghdfghdrgfhh">
+        <meta name="description" content="Browser based timer for your sitting meditation. One of the few that give you the option to choose and select the notification">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./assets/css/style.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" >
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" >
     </head>
     <body>
-        
+        <form>
+            <div>
+                <label for="presetProfiles">Choose a preset profile:</label>
+                <select id="presetProfiles">
+                  <option value=""></option>
+                  <option value=""></option>
+                </select>
+
+                <label for="duration">Sitting Duration (mins):</label>
+                <input type="number" id="duration">
+
+                <label for="openEnd">Open End:</label>
+                <input type="checkbox" id="openEnd">
+            </div>
+            <br>
+            <div>
+                <label for="preparationTime">Preparation Time (mins):</label>
+                <input type="number" id="preparationTime" min="0" max="999">
+
+                <label for="notificationType">Notification Type:</label>
+                <select id="notificationType">
+                  <option value=""></option>
+                  <option value=""></option>
+                </select>
+
+                <label for="prepNotif">Select a file:</label>
+                <input type="file" id="prepNotif" name="prepNotif" disabled>
+            </div>
+            <br>
+            <div>
+                <label for="intervals">Number of intervals:</label>
+                <input type="number" id="intervals">
+            </div>
+            <br>
+            <div>
+
+                <label for="intervalTime">Interval Time (mins):</label>
+                <input type="number" id="intervalTime" min="0" max="999">
+
+                <label for="notificationType">Notification Type:</label>
+                <select id="notificationType">
+                  <option value=""></option>
+                  <option value=""></option>
+                </select>
+
+                <label for="intervalNotif">Select a file:</label>
+                <input type="file" id="intervalNotif" name="intervalNotif" disabled>
+            </div>
+            <br>
+            <div>
+                <label for="endingTime">Ending Time (mins):</label>
+                <input type="number" id="endingTime" readonly>
+
+                <label for="notificationType">Notification Type:</label>
+                <select id="notificationType">
+                  <option value=""></option>
+                  <option value=""></option>
+                </select>
+
+                <label for="endNotif">Select a file:</label>
+                <input type="file" id="endNotif" name="endNotif" disabled>
+                
+            </div>
+            <br>
+            <div>
+            <br>
+            <button type="button" id="saveProfile" onclick="">Save Profile</button>
+            </div>
+        </form>
         
         <script src="" async defer></script>
     </body>
