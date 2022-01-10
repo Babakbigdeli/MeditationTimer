@@ -5,11 +5,24 @@
     background-size: 100% 100%;
     font-family: Verdana, Tahoma, sans-serif;
     color: white;
+    padding-top: 100px;
   }
 
-  div  { 
+  form > div  { 
     display: grid;
-    grid-template-columns: 200px 100px 200px 100px 100px 200px;
+    grid-template-columns: 200px 100px 200px 100px 100px 200px   ;
     text-align: right;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    min-height: 0;
+    min-width: 0;
   }
+
+form + div {
+  width: 400px;
+  font-size: 60px;
+  text-align: center;
+  color: black;
+
+}
 
