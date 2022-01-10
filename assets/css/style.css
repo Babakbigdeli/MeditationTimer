@@ -8,21 +8,22 @@
     padding-top: 100px;
   }
 
+  form {
+  position: relative
+  }
   form > div  { 
     display: grid;
     grid-template-columns: 200px 100px 200px 100px 100px 200px   ;
     text-align: right;
     margin-top: 20px;
     margin-bottom: 20px;
-    min-height: 0;
-    min-width: 0;
   }
 
-form + div {
-  width: 400px;
+  form + div {
   font-size: 60px;
   text-align: center;
   color: black;
-
-}
+  position: absolute;
+  left: 350px;
+  }
 
