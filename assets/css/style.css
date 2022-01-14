@@ -2,7 +2,7 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../images/sky.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100% 100%;
+    background-size: cover;
     font-family: Verdana, Tahoma, sans-serif;
     color: white;
     padding-top: 100px;
